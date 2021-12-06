@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Favicon.png">
+    <link rel="stylesheet" href="Styles.css">
+    <script src="https://kit.fontawesome.com/05db677ca2.js" crossorigin="anonymous"></script>
+    <script src="Sandbox.js"></script>
+    <title>Infroid</title>
+</head>
+<body onload="userName()">
+    <!-- <nav id="navbar">
+        <li id="nav-listing">
+            <span id=""
+        </li>
+    </nav> -->
+    <div id="hi-div"><h2 id="hi">Hi <span id="nameoutput">There</span>, Welcome to My Profile Website</h2></div>
+    <div id="pc-align"><div id="profile-card">
+    <img src="Favicon.png" id="logo">
+    <p id="name">Infroid</p>
+    <p id="username" onclick="window.open('https://github.com/Infroid-Coder')">@Infroid-Coder</p>
+    <br>
+    <p id="description">
+        I know HTML, CSS and learning JavaScript. 
+        I am currently working on a new website. 
+        I love coding. You can read my Github readme 
+        <span id="readme" onclick="window.open('https://github.com/Infroid-Coder#')">here</span>.
+    </p>
+    </div></div>
+    <div id="hr"></div>
+    <br>
+    <div id="align-infocard"><div id="infocard">
+
+        <div id="code-div">
+            The piece of code I used to add the prompt at loading.<br><br>
+        <code id="code">
+            function userName(){<br>
+            &nbsp;&nbsp; let userName = prompt("Please enter your name:" , "");<br>
+            &nbsp;&nbsp; let nameResult = document.getElementById("nameoutput");<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; if (userName == "" | userName == null) {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nameResult.innerHTML = "There";<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; else {<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; nameResult.innerHTML = userName;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp; }<br>
+            }
+        </code>
+        </div>
+    </div></div>
+    <div id="hr"></div>
+    <br>
+    <div id="sm-divs">
+    <i class="fab fa-discord"></i>
+    <br>
+        <div id="details">
+        If you wanna contact me, you can talk to me on Discord.Below is the data you need to connect with me.
+        <br>You can talk to me about anything you wanna know.</div>
+        Username: Infroid
+        <br>
+        Code: #2987
+    </div>
+    <br>
+    <div id="sm-divs">
+        <i class="fab fa-github"></i>
+        <br>
+            <div id="details">
+            You can check my repositories on my Github account. My all websites are added in my Github account.
+            <br>But some repositories are private. So you won't be able to see them.
+            <br>But yet you can check other repositories. Below are the data you need to find my account.
+        </div>
+            Username: Infroid-Coder
+    </div>
+        <div id="hr" style="margin-top: 10px;"></div>
+        <br>
+        <div id="align-ty">
+        <img src="https://user-images.githubusercontent.com/86107234/144746732-0d72ae20-0895-494a-8779-6d51b98fb569.png"
+         id="ty">
+        </div>
+</body>
+</html>

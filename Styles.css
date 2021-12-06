@@ -1,0 +1,253 @@
+body{
+    background-image: url("BG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+::-webkit-scrollbar{
+    width: 13px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(22, 22, 22);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(80, 80, 80);
+}
+/* ::-webkit-scrollbar-button{
+    background-image: url("Scroll\ button.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+@font-face {
+    font-family: AN;
+    src: url("fonts/AbandoN.ttf");
+}
+@font-face {
+    font-family: AG;
+    src: url("fonts/Alternate\ Gothic\ No2\ D\ Regular.ttf");
+}
+@font-face {
+    font-family: AB;
+    src: url("fonts/ARIBLK.TTF");
+}
+@font-face {
+    font-family: BB;
+    src: url("fonts/BOOMBOX.TTF");
+}
+@font-face {
+    font-family: DC;
+    src: url("fonts/Dodgv2c.ttf");
+}
+@font-face {
+    font-family: DF;
+    src: url("fonts/DragonForcE.ttf");
+}
+@font-face {
+    font-family: E2B;
+    src: url("fonts/Exo2-Black.ttf");
+}
+@font-face {
+    font-family: HP;
+    src: url("fonts/HARRYP__.TTF");
+}
+@font-face {
+    font-family: HH;
+    src: url("fonts/hemi\ head\ bd\ it.ttf");
+}
+@font-face {
+    font-family: LM;
+    src: url("fonts/LemonMilkBold-gx2B3.otf");
+}
+@font-face {
+    font-family: NG;
+    src: url("fonts/Neuzeit\ Grotesk\ Cond\ W01\ Black.otf");
+}
+@font-face {
+    font-family: SF;
+    src: url("fonts/Satisfaction.ttf");
+}
+#logo{
+    width: 250px;
+    border: solid 3px rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#profile-card{
+    text-align: center;
+    border: solid 5px white;
+    display: inline-block;
+    padding: 15px;
+    padding-bottom: 20px;
+    background-color: rgba(180, 180, 180, 0.432);
+    border-radius: 10px;
+    width: 300px;
+    animation-name: profilecard;
+    animation-duration: 1s;
+    /* margin-top: 5px; */
+    margin-bottom: 10px;
+}
+#pc-align{
+    text-align: center;
+}
+#name{
+    color: white;
+    font-family: NG;
+    font-size: 30px;
+    margin: 0%;
+}
+#username{
+    color: rgb(207, 207, 207);
+    font-family: NG;
+    margin: 0%;
+    font-size: 20px;
+    cursor: pointer;
+}
+#username:hover{
+    text-decoration: underline rgb(207, 207, 207);
+}
+#username:active{
+    text-decoration: underline dashed rgb(207, 207, 207);
+}
+#description{
+    color: white;
+    font-family: AB;
+    font-size: 15px;
+    margin: 0%;
+}
+#readme{
+    color: rgb(255, 255, 255);
+    font-family: DC;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#readme:hover{
+    color: yellow;
+}
+#readme:active{
+    color: rgb(255, 0, 0);
+}
+#hi{
+    color: white;
+    border: 5px solid white;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: E2B;
+    font-weight: 500;
+    margin-top: -1px;
+    animation-name: hitag;
+    animation-duration: 1s;
+}
+#hi-div{
+    text-align: center;
+}
+.fa-discord{
+    color: white;
+    font-size: 35px;
+    background-color: rgb(0, 26, 255);
+    padding-right: 6px;
+    padding-left: 7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    animation-name: sm;
+    animation-duration: 1s;
+}
+#hr{
+    text-align: center;
+    background-color: rgba(0, 140, 255, 0.438);
+    padding: 2px;
+    border-radius: 10px;
+    border: solid 2px rgba(0, 255, 242, 0.815);
+}
+#infocard{
+    background-color: rgb(27, 27, 27);
+    width: 650px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    padding: 13px;
+    /* box-shadow: rgba(255, 255, 255, 0.473) 10px 10px , rgba(255, 255, 255, 0.473) -10px -10px; */
+    font-family: HH;
+    color: rgb(255, 255, 255);
+    border: solid 3px white;
+    margin-bottom: 10px;
+}
+#code{
+    color: rgb(51, 255, 0);
+    text-shadow: rgba(0, 0, 0, 0.884) 4px 4px;
+}
+#align-infocard{
+    text-align: center;
+}
+#code-div{
+    text-align:left;
+    display: inline-block;
+}
+.fa-discord{
+    color: white;
+    font-size: 35px;
+    background-color: rgb(0, 26, 255);
+    padding-right: 6px;
+    padding-left: 7px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    animation-name: sm;
+    animation-duration: 1s;
+}
+.fa-github{
+    font-size: 50px;
+    margin-bottom: 5px;
+    color: white;
+}
+.fa-windows{
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: rgb(0, 153, 255);
+}
+#sm-divs{
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    padding: 7px;
+    border-radius: 10px;
+    border: solid 3px white;
+    color: white;
+    font-family: NG;
+}
+#details{
+    margin-bottom: 5px;
+}
+#ty{
+    display: inline-block;
+    width: 60%;
+}
+#align-ty{
+    text-align: center;
+}
+@keyframes profilecard{
+    0%{
+        opacity: 0%;
+        transform: translateX(-400px);
+    }
+}
+@keyframes hitag{
+    0%{
+        transform: translateX(-200px);
+        opacity: 0%;
+    }
+    50%{
+        transform: translateX(200px);
+    }
+}
+@keyframes sm{
+    0%{
+        background: none;
+        transform: translateY(-70px);
+    }
+}
